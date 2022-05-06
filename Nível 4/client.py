@@ -21,7 +21,7 @@ while True :
     msg = input("> ")
     client_socket.send(msg.encode())
 
-    client_socket.listen(1)
+    #client_socket.listen(1)
 
     received = client_socket.recv(1024).decode()
 

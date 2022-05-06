@@ -33,7 +33,7 @@ while True:
         break
 
     print("returning message... " + msg)
-    server_socket.send(msg.encode())
+    client_connection.send(msg.encode())
 
     # Close client connection
     client_connection.close()
